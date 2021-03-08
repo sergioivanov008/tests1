@@ -49,6 +49,10 @@ function highAndLow(numbers) {
 }
 */
 /////////////////
+//isIsogram("Dermatoglyphics") == true
+//isIsogram("aba") == false
+//isIsogram("moOse") == false // -- ignore letter case
+/*
 function isIsogram(str) {
     let lowerStr = str.toLowerCase();
     let check = 0;
@@ -60,7 +64,35 @@ function isIsogram(str) {
     }
     return (check > 0) ? false : true;
 }
+*/
+///////////////////
+/*
+function calc(x) {
+    let total1 = '';
+    for (let i = 0; i < x.length; i++) {
+        total1 += x.charCodeAt(i);
+    }
 
-//isIsogram("Dermatoglyphics") == true
-//isIsogram("aba") == false
-//isIsogram("moOse") == false // -- ignore letter case
+    let total2 = '';
+    for (let i = 0; i < total1.length; i++) {
+        if (total1[i] == '7') {
+            total2 += '1';
+        } else {
+            total2 += total1[i];
+        }
+    }
+
+    let total1Sum = 0;
+    for (let i = 0; i < total1.length; i++) {
+        total1Sum += Number(total1[i]);
+    }
+
+    let total2Sum = 0;
+    for (let i = 0; i < total2.length; i++) {
+        total2Sum += Number(total2[i]);
+    }
+
+    return total1Sum - total2Sum;
+}
+*/
+//////////////////////
