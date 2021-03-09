@@ -96,3 +96,132 @@ function calc(x) {
 }
 */
 //////////////////////
+
+//work only 3 fields
+/*
+function catMouse(map, moves) {
+    let positionCat = map.indexOf('C');
+    let positionMouse = map.indexOf('m');
+    let catField = 0;
+    let mouseField = 0;
+
+    if (positionCat == -1 || positionMouse == -1) {
+        return 'boring without two animals';
+    }
+
+    if (positionCat < 10) {
+        positionCat = positionCat + 1;
+        catField = 1;
+    } else if (positionCat >= 10 && positionCat < 19) {
+        positionCat = positionCat - 9;
+        catField = 2;
+    } else if (positionCat >= 19) {
+        positionCat = positionCat - 19;
+        catField = 3;
+    }
+
+    if (positionMouse < 10) {
+        positionMouse = positionMouse + 1;
+        mouseField = 1;
+    } else if (positionMouse >= 10 && positionMouse < 19) {
+        positionMouse = positionMouse - 9;
+        mouseField = 2;
+    } else if (positionMouse >= 19) {
+        positionMouse = positionMouse - 19;
+        mouseField = 3;
+    }
+
+    let difference = Math.abs(catField - mouseField);
+    let step = Math.abs(positionCat - positionMouse);
+    switch (difference) {
+        case 0:
+            return (step >= moves) ? 'Caught!' : 'Escaped!';
+        case 1:
+            return ((step + 1) <= moves) ? 'Caught!' : 'Escaped!';
+        case 2:
+            return ((step + 2) <= moves) ? 'Caught!' : 'Escaped!';
+    }
+}
+console.log('cat: ' + positionCat + ', cat on field: ' + catField + ', mouse: ' + positionMouse + ', mouse on field: ' + mouseField + ', difference: ' + difference);
+*/
+describe("Basic Tests", function () {
+    it("It should works for basic tests", function () {
+        var map =
+            `..C......
+  .........
+  ....m....`
+        Test.assertSimilar(catMouse(map, 5), 'Caught!')
+
+        map =
+            `.C.......
+  .........
+  ......m..`
+        Test.assertSimilar(catMouse(map, 5), 'Escaped!')
+
+        map =
+            `..C......
+  .........
+  .........`
+        Test.assertSimilar(catMouse(map, 5), 'boring without two animals')
+    });
+});
+
+function catMouse(map, moves) {
+    let fieldLength = map.indexOf('\n');
+    let fieldQuantity = map.length / fieldLength;
+    let positionCat = map.indexOf('C');
+    let positionMouse = map.indexOf('m');
+    let catField = 0;
+    let mouseField = 0;
+
+    if (positionCat == -1 || positionMouse == -1) {
+        return 'boring without two animals';
+    }
+
+    console.log('cat: ' + positionCat + ', cat on field: ' + catField + ', mouse: ' + positionMouse +
+        ', mouse on field: ' + mouseField + ', length of field: ' + fieldLength + ', field Quantity: ' + fieldQuantity);
+
+    /*
+        if (positionCat < 10) {
+            positionCat = positionCat + 1;
+            catField = 1;
+        } else if (positionCat >= 10 && positionCat < 19) {
+            positionCat = positionCat - 9;
+            catField = 2;
+        } else if (positionCat >= 19) {
+            positionCat = positionCat - 19;
+            catField = 3;
+        }
+
+        if (positionMouse < 10) {
+            positionMouse = positionMouse + 1;
+            mouseField = 1;
+        } else if (positionMouse >= 10 && positionMouse < 19) {
+            positionMouse = positionMouse - 9;
+            mouseField = 2;
+        } else if (positionMouse >= 19) {
+            positionMouse = positionMouse - 19;
+            mouseField = 3;
+        }
+
+        let difference = Math.abs(catField - mouseField);
+        let step = Math.abs(positionCat - positionMouse);
+        switch (difference) {
+            case 0:
+                return (step >= moves) ? 'Caught!' : 'Escaped!';
+            case 1:
+                return ((step + 1) <= moves) ? 'Caught!' : 'Escaped!';
+            case 2:
+                return ((step + 2) <= moves) ? 'Caught!' : 'Escaped!';
+        }
+    */
+
+}
+console.log('cat: ' + positionCat + ', cat on field: ' + catField + ', mouse: ' + positionMouse + ', mouse on field: ' + mouseField + ', difference: ' + difference);
+map =
+    `...........
+..m..C.....
+...........
+...........
+...........
+...........`
