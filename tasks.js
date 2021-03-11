@@ -203,4 +203,29 @@ console.log('fieldLength: ' + fieldLength + ', positionCat: ' + positionCat + ',
     ', catStepToMouseField: ' + catStepToMouseField + ', step: ' + step);
 */
 ////////////////////
+/*
+function duplicateEncode(word) {
+    let upWord = word.toUpperCase();
+    let arr = [];
+    let stringRest = '';
+    for (let i = 0; i < upWord.length; i++) {
+        let letter = upWord[i];
+        stringRest = upWord.slice(0, i) + upWord.slice(i + 1);
 
+        if (stringRest.includes(letter)) {
+            arr.push(')');
+        } else {
+            arr.push('(');
+        }
+    }
+    return arr.join('');
+}
+
+console.log('letter: ' + letter + ' , stringRest: ' + stringRest);
+
+duplicateEncode("din");//,"(((");
+duplicateEncode("recede");//,"()()()");
+duplicateEncode("Success");//,")())())","should ignore case");
+duplicateEncode("(( @");//,"))((");
+*/
+///////////////////////
