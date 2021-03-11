@@ -229,3 +229,22 @@ duplicateEncode("Success");//,")())())","should ignore case");
 duplicateEncode("(( @");//,"))((");
 */
 ///////////////////////
+/*
+function squares(x, n) {
+    let arr = [];
+    if (n <= 0) {
+        return arr;
+    }
+    arr.push(x);
+    for (let i = 1; i < n; i++) {
+        x = x * x;
+        arr.push(x);
+    }
+
+    return arr;
+}
+
+squares(2, 5)//, [2, 4, 16, 256, 65536]);
+/*
+////////////////////////
+
