@@ -245,6 +245,24 @@ function squares(x, n) {
 }
 
 squares(2, 5)//, [2, 4, 16, 256, 65536]);
-/*
+*/
 ////////////////////////
+/*
+function checkConcatenatedSum(x, n) {
+    let strNum = String(Math.abs(x));
+    let sum = 0;
+    for (let i = 0; i < strNum.length; i++) {
+        sum += Number(strNum[i].repeat(n));
+    }
 
+    if (x > 0) {
+        return (x == sum) ? true : false;
+    } else {
+        return (x == -sum) ? true : false;
+    }
+}
+
+checkConcatenatedSum(2997, 3);//,true)
+checkConcatenatedSum(-2997, 3);//,true)
+*/
+/////////////////////////
