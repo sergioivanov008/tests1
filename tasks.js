@@ -266,3 +266,20 @@ checkConcatenatedSum(2997, 3);//,true)
 checkConcatenatedSum(-2997, 3);//,true)
 */
 /////////////////////////
+/*
+function FilterString(value) {
+    let strNum = '0123456789';
+    let str = '';
+    for (let i = 0; i < value.length; i++) {
+        if (strNum.indexOf(value[i]) != -1) {
+            str = str + value[i];
+        }
+    }
+    return Number(str);
+}
+
+FilterString("123")//, 123, 'Just return the numbers');
+FilterString("a1b2c3")//, 123, 'Just return the numbers');
+FilterString("aa1bb2cc3dd")//, 123, 'Just return the numbers');
+*/
+/////////////////////////
