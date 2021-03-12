@@ -283,3 +283,22 @@ FilterString("a1b2c3")//, 123, 'Just return the numbers');
 FilterString("aa1bb2cc3dd")//, 123, 'Just return the numbers');
 */
 /////////////////////////
+/*
+function nthFibo(n) {
+    let numPrev = 0;
+    let numNext = 1;
+    for (let i = 1; i < n; i++) {
+        numPrev = numNext - numPrev;
+        numNext = numNext + numPrev;
+    }
+    return numPrev;
+}
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711,
+
+nthFibo(1)//, 0, "1-st Fibo");
+nthFibo(2)//, 1, "2-nd Fibo");
+nthFibo(3)//, 1, "3-rd Fibo");
+nthFibo(4)//, 2, "4-th Fibo");
+*/
+//////////////////////////
