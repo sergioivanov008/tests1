@@ -302,3 +302,22 @@ nthFibo(3)//, 1, "3-rd Fibo");
 nthFibo(4)//, 2, "4-th Fibo");
 */
 //////////////////////////
+/*
+function divCon(x) {
+    let numNum = 0;
+    let numStr = 0;
+    for (let i = 0; i < x.length; i++) {
+        if (typeof (x[i]) === 'number') {
+            numNum += x[i];
+        } else {
+            numStr += Number(x[i]);
+        }
+    }
+    return numNum - numStr;
+}
+
+divCon([9, 3, '7', '3']);//, 2);
+divCon(['5', '0', 9, 3, 2, 1, '9', 6, 7]);//, 14);
+divCon(['3', 6, 6, 0, '5', 8, 5, '6', 2, '0']);//, 13);
+*/
+//////////////////////////////
