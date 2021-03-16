@@ -392,3 +392,54 @@ zipWith(function (a, b) { return a + b; }, [0, 1, 2, 3], [0, 1, 2, 3]);//, [0,2,
 zipWith((a, b) => a + b, [0, 1, 2, 3], [0, 1, 2, 3]);//, [0,2,4,6]);
 */
 ///////////////////////////
+/*
+function starSign(date) {
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    if ((month == 1 && day > 20) || (month == 2 && day < 20)) {
+        return 'Aquarius';
+    } else if ((month == 2 && day > 19) || (month == 3 && day < 21)) {
+        return 'Pisces';
+    } else if ((month == 3 && day > 20) || (month == 4 && day < 21)) {
+        return 'Aries';
+    } else if ((month == 4 && day > 20) || (month == 5 && day < 22)) {
+        return 'Taurus';
+    } else if ((month == 5 && day > 21) || (month == 6 && day < 22)) {
+        return 'Gemini';
+    } else if ((month == 6 && day > 21) || (month == 7 && day < 23)) {
+        return 'Cancer';
+    } else if ((month == 7 && day > 22) || (month == 8 && day < 24)) {
+        return 'Leo';
+    } else if ((month == 8 && day > 23) || (month == 9 && day < 24)) {
+        return 'Virgo';
+    } else if ((month == 9 && day > 23) || (month == 10 && day < 24)) {
+        return 'Libra';
+    } else if ((month == 10 && day > 23) || (month == 11 && day < 23)) {
+        return 'Scorpio';
+    } else if ((month == 11 && day > 22) || (month == 12 && day < 22)) {
+        return 'Sagittarius';
+    } else if ((month == 12 && day > 21) || (month == 1 && day < 21)) {
+        return 'Capricorn';
+    }
+}
+
+
+// starSign(new Date(1970, 5, 5));//, 'Gemini');
+// starSign(new Date(2000, 1, 15));//, 'Aquarius');
+// starSign(new Date(1987, 7, 23));//, 'Leo');
+
+//Aquarius------21 January - 19 February
+//Pisces--------- 20 February - 20 March
+//Aries----------21 March - 20 April
+//Taurus--------21 April - 21 May
+//Gemini--------22 May - 21 June
+//Cancer--------22 June - 22 July
+//Leo------------- 23 July - 23 August
+//Virgo----------- 24 August - 23 September
+//Libra----------- 24 September - 23 October
+//Scorpio--------24 October - 22 November
+//Sagittarius----23 November - 21 December
+//Capricorn----- 22 December - 20 January
+
+*/
+/////////////////
