@@ -345,3 +345,30 @@ findOdd([1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1]);//, 10);
 findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]);//, 1);
 */
 /////////////////////////////////
+/*
+function findOutlier(integers) {
+    let odd = 0;
+    let even = 0;
+
+    (integers[0] % 2 == 0) ? even += 1 : odd += 1;
+    (integers[1] % 2 == 0) ? even += 1 : odd += 1;
+    (integers[2] % 2 == 0) ? even += 1 : odd += 1;
+
+    let oddOrEven = 0;
+    (odd > even) ? oddOrEven = 0 : oddOrEven = 1;
+
+    for (let i = 0; i < integers.length; i++) {
+        if (oddOrEven == 0) {
+            if (integers[i] % 2 == 0) {
+                return integers[i];
+            }
+        } else {
+            if (integers[i] % 2 != 0) {
+                return integers[i];
+            }
+        }
+    }
+}
+*/
+/////////////////////////////////
+
