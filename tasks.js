@@ -485,4 +485,24 @@ function count(array) {
 count(['a', 'a', 'b', 'b', 'b']);//, { 'a': 2, 'b': 3 })
 */
 //////////////////
+/*
+function killer(suspectInfo, dead) {
+    for (let key in suspectInfo) {
+        let ok = 0;
+        for (let i = 0; i < dead.length; i++) {
+            if (suspectInfo[key].includes(dead[i]) == true) {
+                ok += 1;
+            }
+        }
+
+        if (ok == dead.length) {
+            return key;
+        }
+    }
+}
+
+killer({ 'James': ['Jacob', 'Bill', 'Lucas'], 'Johnny': ['David', 'Kyle', 'Lucas'], 'Peter': ['Lucy', 'Kyle'] }, ['Lucas', 'Bill']);//, 'James');
+killer({ 'Brad': [], 'Megan': ['Ben', 'Kevin'], 'Finn': [] }, ['Ben']);//, 'Megan');
+*/
+/////////////////////
 
