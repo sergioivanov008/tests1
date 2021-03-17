@@ -505,4 +505,23 @@ killer({ 'James': ['Jacob', 'Bill', 'Lucas'], 'Johnny': ['David', 'Kyle', 'Lucas
 killer({ 'Brad': [], 'Megan': ['Ben', 'Kevin'], 'Finn': [] }, ['Ben']);//, 'Megan');
 */
 /////////////////////
+/*
+function validateUsr(username) {
+    let regex = /^[a-z_0-9]{4,16}$/;
+    res = regex.test(username);
+    return res;
+}
 
+
+// validateUsr('asddsa');//, true);
+// validateUsr('a');//, false);
+// validateUsr('Hass');//, false);
+// validateUsr('Hasd_12assssssasasasasasaasasasasas');//, false);
+// validateUsr('');//, false);
+// validateUsr('____');//, true);
+// validateUsr('012');//, false);
+// validateUsr('p1pp1');//, true);
+// validateUsr('asd43 34');//, false);
+// validateUsr('asd43_34');//, true);
+*/
+///////////////////////
