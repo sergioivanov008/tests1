@@ -443,6 +443,7 @@ function starSign(date) {
 
 */
 /////////////////
+/*
 function fridayTheThirteenths(start, end) {
     let numYears = 0;
     if (end != undefined) {
@@ -463,3 +464,25 @@ function fridayTheThirteenths(start, end) {
 
 fridayTheThirteenths(1999, 2000);//, "8/13/1999 10/13/2000");
 fridayTheThirteenths(2000);//, "10/13/2000");
+*/
+//////////////////
+/*
+function count(array) {
+    let uniqArr = Array.from(new Set(array));
+    let obj = {};
+    for (let i = 0; i < uniqArr.length; i++) {
+        let objCount = 0;
+        for (let j = 0; j < array.length; j++) {
+            if (array[j] == uniqArr[i]) {
+                objCount += 1;
+            }
+        }
+        obj[uniqArr[i]] = objCount;
+    }
+    return obj;
+}
+
+count(['a', 'a', 'b', 'b', 'b']);//, { 'a': 2, 'b': 3 })
+*/
+//////////////////
+
