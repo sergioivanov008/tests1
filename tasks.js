@@ -545,3 +545,29 @@ function validPass(password) {
 // validPass('ThisPasswordIsTooLong1234');// , 'INVALID' )
 // let regex = /^(?=.*?[A-Za-z])(?=.*?[0-9]).{4,19}$/;
 */
+/////////////////////////
+/*
+function inter(s1, s2) {
+    let arrOne = Array.from(s1);
+    let arrTwo = Array.from(s2);
+    let obj = [];
+    for (let i = 0; i < arrOne.length; i++) {
+        for (let j = 0; j < arrTwo.length; j++) {
+            if (arrOne[i] == arrTwo[j]) {
+                obj.push(arrOne[i]);
+            }
+        }
+    }
+    return new Set(obj);
+}
+
+let A = new Set([1, 2]), B = new Set([2, 3]), C = new Set([2]), AB = inter(A, B);
+
+inter(A, A);//, A, "A inter A == A");
+
+Test.assertSimilar(AB, C);
+Test.assertSimilar([...AB].sort(), [...inter(B, A)].sort(), "A inter B == B inter A");
+
+Test.assertEquals(AB instanceof Set, true, "A inter B should be a Set too")
+*/
+////////////////////////
