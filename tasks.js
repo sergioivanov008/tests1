@@ -443,3 +443,23 @@ function starSign(date) {
 
 */
 /////////////////
+function fridayTheThirteenths(start, end) {
+    let numYears = 0;
+    if (end != undefined) {
+        numYears = end - start;
+    }
+
+    let arrDayAsk = [];
+    for (let i = 0; i <= numYears; i++) {
+        for (let j = 1; j <= 12; j++) {
+            let dayAsk = new Date(start + i + ',' + j + ',' + 13);
+            if (dayAsk.getDay() == 5) {
+                arrDayAsk.push(j + '/13/' + dayAsk.getFullYear());
+            }
+        }
+    }
+    return arrDayAsk.join(' ');
+}
+
+fridayTheThirteenths(1999, 2000);//, "8/13/1999 10/13/2000");
+fridayTheThirteenths(2000);//, "10/13/2000");
