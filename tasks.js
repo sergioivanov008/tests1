@@ -525,3 +525,23 @@ function validateUsr(username) {
 // validateUsr('asd43_34');//, true);
 */
 ///////////////////////
+/*
+function validPass(password) {
+    let regexOne = /^[A-Za-z0-9]{4,19}$/;
+    let regexTwo = /([0-9]+)/;
+
+    resOne = regexOne.test(password);
+    resTwo = regexTwo.test(password);
+
+    return (resOne === true && resTwo === true) ? 'VALID' : 'INVALID';
+}
+
+// validPass('Username123');// , 'VALID' );
+// validPass('Username');// , 'INVALID' );
+// validPass('1Username');// , 'VALID' );
+// validPass('123');// , 'INVALID' );
+// validPass('a12');// , 'INVALID' );
+// validPass('Username123!');// , 'INVALID' );
+// validPass('ThisPasswordIsTooLong1234');// , 'INVALID' )
+// let regex = /^(?=.*?[A-Za-z])(?=.*?[0-9]).{4,19}$/;
+*/
