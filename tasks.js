@@ -571,3 +571,35 @@ Test.assertSimilar([...AB].sort(), [...inter(B, A)].sort(), "A inter B == B inte
 Test.assertEquals(AB instanceof Set, true, "A inter B should be a Set too")
 */
 ////////////////////////
+
+/*
+let str = ('abbcccddddeeeffg');
+
+function countLetter(str) {
+  let letterArr = [];
+  let sumArr = [];
+  let strArr = str.split('');
+
+  letterArr.push(strArr[0]);
+  sumArr.push(1);
+
+  for (let i = 1; i < strArr.length; i++) {
+    if (strArr[i] === letterArr[letterArr.length - 1]) {
+      sumArr[sumArr.length - 1] += 1;
+    } else {
+      letterArr.push(strArr[i]);
+      sumArr.push(1);
+    }
+  }
+
+  let newStr = '';
+
+  for (let j = 0; j < letterArr.length; j++) {
+    newStr += letterArr[j] + sumArr[j];
+  }
+
+  console.log(newStr);
+}
+*/
+//////////////////////////
+
